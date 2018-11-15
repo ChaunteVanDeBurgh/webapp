@@ -328,3 +328,9 @@ div#app-info {
 .row .card + .card {
   margin-top: 2rem;
 }
+
+/* tweet modal */
+
+#tweet-modal char-count {
+  padding: 0.7rem 0;
+}
