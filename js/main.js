@@ -8,5 +8,28 @@ $(document).ready(function() {
 
 		$charCount.html(maxCharCount - tweetLength);
 	});
+
 	$('[data-toggle="tooltip"]').tooltip();
+	$('[data-toggle="popover"]').popover();
+
+	// Pop Over 
+
+	var popoverContentTemplate = '' +
+		'<img src="imgs/breed.jpg" class="img-rounded">' +
+		'<div class="info">' +
+			'<strong>Dog Breeds</strong>' +
+			'<a href="#" class="btn btn-default">' +
+			'<span class="glyphicon glyphicon-plus" aria-hidden="true"</span>'
+
+			'Follow' +
+			'</a>' +
+			'</div>';
+
+	$('[data-toggle="popover"]').popover({
+		placement: 'bottom',
+		html: true,
+		content: function() {
+			return popoverContentTemplate;
+		}
+	});
 });
