@@ -334,3 +334,9 @@ div#app-info {
 #tweet-modal char-count {
   padding: 0.7rem 0;
 }
+
+/* folowing glyphicon */
+
+div#who-follow li .info .glyphicon-ok {
+  color: #5cb85c;
+}
